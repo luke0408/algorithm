@@ -31,6 +31,9 @@
       "vscjava.vscode-maven"
       "fwcd.kotlin"
       "mathiasfrohlich.Kotlin"
+
+      # Util Extentions.
+      "formulahendry.code-runner"
     ];
 
     previews = {
