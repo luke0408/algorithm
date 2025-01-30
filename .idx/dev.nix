@@ -29,6 +29,8 @@
       "vscjava.vscode-java-pack"
       "vscjava.vscode-java-test"
       "vscjava.vscode-maven"
+      "fwcd.kotlin"
+      "mathiasfrohlich.Kotlin"
     ];
 
     previews = {
