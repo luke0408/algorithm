@@ -3,29 +3,42 @@
   channel = "stable-24.05"; # or "unstable"
 
   packages = [
-    # pkgs.go
-    # pkgs.python311
-    # pkgs.python311Packages.pip
-    # pkgs.nodejs_20
-    # pkgs.nodePackages.nodemon
+    # Java and Kotlin support.
+    pkgs.jdk21
+    pkgs.kotlin
+    pkgs.gradle # for kotlin/java builds
+    pkgs.kotlin-language-server
+    pkgs.java-language-server
+
+    # NodeJS and TypeScript support
+    pkgs.nodePackages.typescript-language-server
+    pkgs.nodePackages.eslint
+    pkgs.nodePackages.prettier
+    pkgs.nodejs
   ];
 
-  env = {};
+  env = { };
+
   idx = {
     extensions = [
-      # "vscodevim.vim"
+      # Java and Kotlin Extentions.
+      "redhat.java"
+      "vscjava.vscode-gradle"
+      "vscjava.vscode-java-debug"
+      "vscjava.vscode-java-dependency"
+      "vscjava.vscode-java-pack"
+      "vscjava.vscode-java-test"
+      "vscjava.vscode-maven"
     ];
 
     previews = {
       enable = true;
-      previews = {
-
-      };
+      previews = { };
     };
 
     workspace = {
       onCreate = {
-        # Example: install JS dependencies from NPM
+        # install JS dependencies from NPM
         # npm-install = "npm install";
       };
 
