@@ -7,13 +7,8 @@
     pkgs.jdk21
     pkgs.kotlin
     pkgs.gradle # for kotlin/java builds
-    pkgs.kotlin-language-server
-    pkgs.java-language-server
 
     # NodeJS and TypeScript support
-    pkgs.nodePackages.typescript-language-server
-    pkgs.nodePackages.eslint
-    pkgs.nodePackages.prettier
     pkgs.nodejs
   ];
 
