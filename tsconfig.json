@@ -1,0 +1,17 @@
+{
+    "include": ["./src/**/*.ts"],
+    "compilerOptions": {
+        "outDir": "./lib",
+        "target": "ES2016",
+        "module": "CommonJS",
+        "esModuleInterop": true,
+        "declaration": true,
+        "declarationMap": true,
+        "forceConsistentCasingInFileNames": true,
+        "sourceMap": true,
+        "strict": true,
+        "strictNullChecks": true,
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+    },
+  }

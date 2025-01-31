@@ -1,0 +1,22 @@
+{
+    "name": "backjoon",
+    "version": "1.0.0",
+    "license": "MIT",
+    "scripts": {
+        "------------------------BUILDS------------------------": "",
+        "build": "npm run build:test && npm run build:main",
+        "build:test": "rimraf bin && tsc -p test/tsconfig.json",
+        "build:main": "rimraf lib && tsc",
+        "------------------------TESTS-------------------------": "",
+        "test": "node bin/test/index.js"
+    },
+    "devDependencies": {
+        "@types/inquirer": "^8.2.5",
+        "@types/node": "^18.15.11",
+        "commander": "^13.1.0",
+        "rimraf": "^6.0.1",
+        "ts-node": "^10.9.1",
+        "ts-patch": "^3.3.0",
+        "typescript": "^5.0.3"
+    }
+}
