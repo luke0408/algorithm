@@ -1,5 +1,5 @@
 import test from "node:test"
-import { solution } from "../../../src/math/beakjoon/one/4375"
+import { solution } from "../../../src/math/baekjoon/one/4375"
 import { deepEqual } from "node:assert";
 
 test('test', () => {
