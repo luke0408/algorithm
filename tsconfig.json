@@ -5,6 +5,7 @@
         "target": "ES2016",
         "module": "CommonJS",
         "esModuleInterop": true,
+        "moduleResolution": "node",
         "declaration": true,
         "declarationMap": true,
         "forceConsistentCasingInFileNames": true,
