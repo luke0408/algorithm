@@ -47,4 +47,5 @@ const min_y = y_map.findIndex(isOne);
 const max_y = y_map.findLastIndex(isOne);
 
 // 4. 결과 반환
-console.log((max_x - min_x + 1) * (max_y - min_y + 1));
+if ((max_x == min_x) && (max_y == min_y)) console.log(0);
+else console.log((max_x - min_x + 1) * (max_y - min_y + 1));
